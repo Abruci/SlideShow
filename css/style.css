@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/SlideShow/images/lolbg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.slider {
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.middle {
+    /* Zarovnání na střed */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-15%);
+}
+
+.bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid #ffffff;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.bar:hover {
+    background: #fff;
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    display: flex;
+}
+
+input[name="r"] {
+    display: none;  /* Inputy radio zmizí (ty kolečka)*/
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+}
+.slide {
+    min-width: 100%;
+    height: auto;
+    transition: margin-left 1s ease-in-out;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -100%;
+}
+#r3:checked ~ .s1 {
+    margin-left: -200%;
+}
+#r4:checked ~ .s1 {
+    margin-left: -300%;
+}
+#r5:checked ~ .s1 {
+    margin-left: -400%;
+}
+#r6:checked ~ .s1 {
+    margin-left: -500%;
+}
+#r7:checked ~ .s1 {
+    margin-left: -600%;
+}
+#r8:checked ~ .s1 {
+    margin-left: -700%;
+}
+#r9:checked ~ .s1 {
+    margin-left: -800%;
+}
+#r10:checked ~ .s1 {
+    margin-left: -900%;
+}
+
